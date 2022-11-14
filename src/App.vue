@@ -15,6 +15,7 @@
 import axios from 'axios'
 import AppSpinner from "@/components/spinner";
 
+
 export default {
   name: 'App',
   components: {AppSpinner},
@@ -25,6 +26,9 @@ export default {
       exchangeHistory:[],
       isLoading: false
     }
+  },
+  mounted() {
+    this.getExchangeInfo()
   },
   methods: {
     async getExchangeInfo() {
