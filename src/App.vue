@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2>Список возможныч сделок</h2>
+    <h2>Список возможных сделок</h2>
     <app-spinner v-if="isLoading"></app-spinner>
     <template v-else>
       <p v-if="symbols.length">{{exchangeHistory.length}} из {{symbols.length}}</p>
