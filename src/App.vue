@@ -15,7 +15,6 @@
 import axios from 'axios'
 import AppSpinner from "@/components/spinner";
 
-
 export default {
   name: 'App',
   components: {AppSpinner},
